@@ -2,3 +2,26 @@
 .idea
 
 # Add any other stuff here
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+dh9-ta/node_modules
+dh9-ta/.pnp
+dh9-ta/.pnp.js
+
+# testing
+dh9-ta//coverage
+
+# production
+dh9-ta/build
+
+# misc
+dh9-ta/.DS_Store
+dh9-ta/.env.local
+dh9-ta/.env.development.local
+dh9-ta/.env.test.local
+dh9-ta/.env.production.local
+
+dh9-ta/npm-debug.log*
+dh9-ta/yarn-debug.log*
+dh9-ta/yarn-error.log*
