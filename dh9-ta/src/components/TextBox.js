@@ -52,6 +52,13 @@ const TextBox = () => {
         setAllText('');
     } 
     
+    const addSpace = () => {
+        setInputtedText(inputtedText + ' ');
+    }
+
+    const clearInputtedText = () => {
+        setInputtedText('');
+    }
 
     return(
         <>
@@ -66,7 +73,7 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button className="button" onClick={addOne}>Add Text</button>
+            <button className="button" onClick={addOne}>Add</button>
         </div>
         <div>
             <h3 className="subtitle">Numbers</h3>
@@ -78,7 +85,7 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button className="button" onClick={addTwo}>Add Text</button>
+            <button className="button" onClick={addTwo}>Add</button>
         </div>
         <div>
             <h3 className="subtitle">Special Characters</h3>
@@ -90,7 +97,7 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button className="button" onClick={addThree}>Add Text</button>
+            <button className="button" onClick={addThree}>Add</button>
         </div>
         <div>
             <h3 className="output">{allText}</h3>
@@ -100,11 +107,11 @@ const TextBox = () => {
         </div> 
         <div>.</div>
         <div>
-            <button className="button2" onClick={addInputtedText}>Add Text</button>
+            <button className="button2" onClick={addInputtedText}>Add Text</button> <p></p>
+            <button className="button2" onClick={addSpace}>Add Space</button> <p></p>
+            <button className="button2" onClick={clearInputtedText}>Delete Text</button>
         </div>
-        
-            <textarea className="output">{inputtedText}</textarea>
-        
+            <p className="output">{inputtedText}</p>
         </>
 
         /*
