@@ -1,58 +1,81 @@
 .logo{
-  color: #555;  
-  font-family: 'Courier New', Courier, monospace;
-  line-height: 22px; 
-  text-align: center; 
-  text-align: center; 
-  font-size: 50px; 
-  color: white; 
-  
-  
-  text-align: center; 
-  font-size: 50px; 
-  color: white; 
-  padding: 20px 20px;
-  border-right: 0.15em   solid #333; /* add a border to the right of the text */
-  white-space: pre; /* prevent the text from wrapping to the next line */
-  overflow: hidden; /* hide any overflow */
-  animation: typing 2s steps(30, end), blink-caret 1.5s step-end infinite; /* animate the typing effect */ 
-  max-width: 100%;
-}
-
-  /* animate the typing effect */
-  @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    color: #555;  
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 22px; 
+    text-align: center; 
+    text-align: center; 
+    font-size: 50px; 
+    color: white; 
+    
+    
+    text-align: center; 
+    font-size: 50px; 
+    color: white; 
+    padding: 20px 20px;
+    border-right: 0.15em   solid #333; /* add a border to the right of the text */
+    white-space: pre; /* prevent the text from wrapping to the next line */
+    overflow: hidden; /* hide any overflow */
+    animation: typing 2s steps(30, end), blink-caret 1.5s step-end infinite; /* animate the typing effect */ 
+    max-width: 100%;
   }
-
-  /* animate the caret (the vertical line at the end of the text) */
-  @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #333 }
-  }  
-    body{
-      background-color: #1e90ff;
-    } 
-  .intro{ 
-      font-family: 'Courier New', Courier, monospace;
-      width: 40%;
-      height: 15%;
-      background-color: white;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center; 
-      padding: 50px 50px; 
-      text-decoration: none; 
-      font-weight: bold; 
-      color: black; 
-      display: inline-block; 
-      margin: 30px 0; 
-      border-radius: 50px; 
-    } 
-    .textbox{
-      margin: 30% 50% 50% 70%;
-      width: 400px; 
-      height: 400px;
+  
+    /* animate the typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
     }
+  
+    /* animate the caret (the vertical line at the end of the text) */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+    }  
+      body{
+        background-color: #1e90ff;
+      } 
+    .intro{ 
+        font-family: 'Courier New', Courier, monospace;
+        width: 40%;
+        height: 15%;
+        background-color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        padding: 50px 50px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        color: black; 
+        display: inline-block; 
+        margin: 30px 0; 
+        border-radius: 50px; 
+      } 
+      .textbox{
+        margin: 30% 50% 50% 70%;
+        width: 400px; 
+        height: 400px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block; 
+        
+      }
+  
+      .dropdown-content {
+        text-align: center;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 10px; 
+        max-width: 25px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        overflow-y: scroll;
+        max-height: 20px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }

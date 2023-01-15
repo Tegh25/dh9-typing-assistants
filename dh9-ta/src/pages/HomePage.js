@@ -4,7 +4,11 @@ import TextBox from '../components/TextBox';
 const HomePage = () => {
 
     return(
-        <TextBox />
+        <>
+        <div>
+            <TextBox />
+        </div>
+        </>
     );
 }
 
