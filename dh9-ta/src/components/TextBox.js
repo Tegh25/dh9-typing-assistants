@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState } from "react"; 
+import '../App.css'
 import FuzzySearchResults from "./FuzzySearchResults";
 
 const TextBox = () => {
@@ -49,12 +50,14 @@ const TextBox = () => {
     const addInputtedText = () => {
         setInputtedText(inputtedText + allText);
         setAllText('');
-    }
+    } 
+    
 
     return(
         <>
         <div>
-            <h3>Letters</h3>
+            <h3 className="subtitle">Letters</h3>
+            
             <select onChange={onOptionChangeHandlerOne}>
                 
                 {optionsOne.map((option, index) => {
@@ -63,10 +66,10 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button onClick={addOne}>Add Text</button>
+            <button className="button" onClick={addOne}>Add Text</button>
         </div>
         <div>
-            <h3>Numbers</h3>
+            <h3 className="subtitle">Numbers</h3>
             <select onChange={onOptionChangeHandlerTwo}>
                 
                 {optionsTwo.map((option, index) => {
@@ -75,10 +78,10 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button onClick={addTwo}>Add Text</button>
+            <button className="button" onClick={addTwo}>Add Text</button>
         </div>
         <div>
-            <h3>Special Characters</h3>
+            <h3 className="subtitle">Special Characters</h3>
             <select onChange={onOptionChangeHandlerThree}>
                 
                 {optionsThree.map((option, index) => {
@@ -87,20 +90,21 @@ const TextBox = () => {
                     </option>
                 })}
             </select>
-            <button onClick={addThree}>Add Text</button>
+            <button className="button" onClick={addThree}>Add Text</button>
         </div>
         <div>
-            <h3>{allText}</h3>
+            <h3 className="output">{allText}</h3>
         </div>
         <div>
-            <button onClick={deleteChar}>Delete</button>
-        </div>
+            <button className="button2" onClick={deleteChar}>Delete</button>
+        </div> 
+        <div>.</div>
         <div>
-            <button onClick={addInputtedText}>Add Text</button>
+            <button className="button2" onClick={addInputtedText}>Add Text</button>
         </div>
-        <div>
-            <textarea>{inputtedText}</textarea>
-        </div>
+        
+            <textarea className="output">{inputtedText}</textarea>
+        
         </>
 
         /*

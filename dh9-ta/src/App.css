@@ -6,7 +6,8 @@
     text-align: center; 
     font-size: 50px; 
     color: white; 
-    
+    top: 10%; 
+    bottom: 90%;
     
     text-align: center; 
     font-size: 50px; 
@@ -58,7 +59,8 @@
       }
       .dropdown {
         position: relative;
-        display: inline-block; 
+        display: inline-block;  
+        color: red;
         
       }
   
@@ -78,4 +80,93 @@
       
       .dropdown:hover .dropdown-content {
         display: block;
+      } 
+      .system{
+        color: white; 
+        margin-top: 6%; 
+
+        
+      } 
+      .button{
+        color: white ;  
+        background-color: lightslategray ;
+        border-radius: 5px; 
+        font-size: 20px; 
+      } 
+      .button2{
+        margin-left: 45%; 
+        color: white ;  
+        background-color: lightslategray ;
+        border-radius: 5px; 
+        font-size: 20px; 
       }
+
+      .customs-select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        color: red; 
+        margin-left: 50%;
+    }
+    
+    label {
+        font-size: 16px;
+        margin-bottom: 8px; 
+    }
+    
+    select {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px; 
+        color:white; 
+        background-color: lightslategray;  
+        font-weight: 50px; 
+        margin-left: 45%; 
+        margin-top: 2%;
+        
+    } 
+.subtitle{ 
+  margin-left: 45%; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 30px;
+} 
+.output{
+  margin-left: 50%; 
+  font-size: 25px;
+} 
+.logo{
+  color: #555;  
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 22px; 
+  text-align: center; 
+  text-align: center; 
+  font-size: 60px; 
+  color: white; 
+  
+  
+  text-align: center; 
+  font-size: 50px; 
+  color: white; 
+  padding: 20px 20px;
+  border-right: 0.15em   solid #333; /* add a border to the right of the text */
+  white-space: pre; /* prevent the text from wrapping to the next line */
+  overflow: hidden; /* hide any overflow */
+  animation: typing 2s steps(30, end), blink-caret 1.5s step-end infinite; /* animate the typing effect */ 
+  max-width: 100%;
+}
+
+  /* animate the typing effect */
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+  }
+
+  /* animate the caret (the vertical line at the end of the text) */
+  @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #333 }
+  }  
+    body{
+      background-color: #1e90ff;
+    } 
